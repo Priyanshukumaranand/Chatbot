@@ -1,0 +1,462 @@
+[
+    {
+        "tag": "greeting",
+        "patterns": [
+            "Hi",
+            "Hello",
+            "Hey",
+            "How are you"
+        ],
+        "responses": [
+            "Hello there",
+            "Hello",
+            "Hey",
+            "I'm fine, thank you",
+            "Nothing much"
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": [
+            "Bye",
+            "Goodbye",
+            "See you later",
+            "Take care"
+        ],
+        "responses": [
+            "Goodbye",
+            "See you later",
+            "Take care"
+        ]
+    },
+    {
+        "tag": "thanks",
+        "patterns": [
+            "Thanks",
+            "Thank you",
+            "That's helpful",
+            "Thank you very much"
+        ],
+        "responses": [
+            "You're welcome",
+            "Anytime",
+            "My pleasure"
+        ]
+    },
+    {
+        "tag": "about",
+        "patterns": [
+            "Who are you",
+            "What are you",
+            "What's your name",
+            "What do you do"
+        ],
+        "responses": [
+            "I'm a chatbot",
+            "I'm a virtual assistant",
+            "I'm a bot"
+        ]
+    },
+    {
+        "tag": "help",
+        "patterns": [
+            "Can you help me",
+            "What can you do for me",
+            "I need your assistance",
+            "Can you assist me"
+        ],
+        "responses": [
+            "I can help you with that",
+            "I can assist you",
+            "I can do that"
+        ]
+    },
+    {
+        "tag": "age",
+        "patterns": [
+            "How old are you",
+            "What's your age"
+        ],
+        "responses": [
+            "I'm a computer program, I don't have an age"
+        ]
+    },
+    {
+        "tag": "weather",
+        "patterns": [
+            "What's the weather like today",
+            "How's the weather today",
+            "Is it going to rain today"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know the weather, but I hope it's sunny!"
+        ]
+    },
+    {
+        "tag": "news",
+        "patterns": [
+            "What's the latest news",
+            "Tell me the news",
+            "What's happening around the world"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know the news, but I hope it's good!"
+        ]
+    },
+    {
+        "tag": "jokes",
+        "patterns": [
+            "Tell me a joke",
+            "Say something funny",
+            "Do you know any jokes"
+        ],
+        "responses": [
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "What do you call a fish with no eyes? Fsh."
+        ]
+    },
+    {
+        "tag": "music",
+        "patterns": [
+            "Play some music",
+            "Can you play some music",
+            "I want to listen to music"
+        ],
+        "responses": [
+            "I'm a computer program, I can't play music, but I can suggest some great songs!"
+        ]
+    },
+    {
+        "tag": "movies",
+        "patterns": [
+            "What's your favorite movie",
+            "Tell me a movie",
+            "Do you like movies"
+        ],
+        "responses": [
+            "I'm a computer program, I don't watch movies, but I can recommend some!"
+        ]
+    },
+    {
+        "tag": "food",
+        "patterns": [
+            "What's your favorite food",
+            "Do you like pizza",
+            "Tell me a recipe"
+        ],
+        "responses": [
+            "I'm a computer program, I don't eat food, but I can share some recipes!"
+        ]
+    },
+    {
+        "tag": "sports",
+        "patterns": [
+            "Do you like sports",
+            "What's your favorite sport",
+            "Tell me about sports"
+        ],
+        "responses": [
+            "I'm a computer program, I don't play sports, but I can tell you about them!"
+        ]
+    },
+    {
+        "tag": "hobbies",
+        "patterns": [
+            "What are your hobbies",
+            "Do you have any hobbies",
+            "Tell me about your hobbies"
+        ],
+        "responses": [
+            "I'm a computer program, I don't have hobbies, but I can suggest some!"
+        ]
+    },
+    {
+        "tag": "time",
+        "patterns": [
+            "What time is it",
+            "Can you tell me the time",
+            "What's the current time"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know the current time, but I can help you find out!"
+        ]
+    },
+    {
+        "tag": "date",
+        "patterns": [
+            "What's the date today",
+            "Can you tell me the date",
+            "What's today's date"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know the current date, but I can help you find out!"
+        ]
+    },
+    {
+        "tag": "travel",
+        "patterns": [
+            "Where should I travel",
+            "Suggest a travel destination",
+            "Where to go on vacation"
+        ],
+        "responses": [
+            "I'm a computer program, I don't travel, but I can suggest some great destinations!"
+        ]
+    },
+    {
+        "tag": "books",
+        "patterns": [
+            "Recommend a book",
+            "What's a good book to read",
+            "Do you like reading"
+        ],
+        "responses": [
+            "I'm a computer program, I don't read books, but I can recommend some!"
+        ]
+    },
+    {
+        "tag": "technology",
+        "patterns": [
+            "Tell me about technology",
+            "What's new in tech",
+            "Do you like technology"
+        ],
+        "responses": [
+            "I'm a computer program, I don't use technology, but I can tell you about it!"
+        ]
+    },
+    {
+        "tag": "history",
+        "patterns": [
+            "Tell me about history",
+            "What's a historical fact",
+            "Do you know any history"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know history, but I can share some facts!"
+        ]
+    },
+    {
+        "tag": "science",
+        "patterns": [
+            "Tell me about science",
+            "What's a scientific fact",
+            "Do you know any science"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know science, but I can share some facts!"
+        ]
+    },
+    {
+        "tag": "math",
+        "patterns": [
+            "Tell me about math",
+            "What's a math fact",
+            "Do you know any math"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know math, but I can share some facts!"
+        ]
+    },
+    {
+        "tag": "art",
+        "patterns": [
+            "Tell me about art",
+            "What's a famous painting",
+            "Do you like art"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know art, but I can tell you about it!"
+        ]
+    },
+    {
+        "tag": "language",
+        "patterns": [
+            "Tell me about languages",
+            "What's a popular language",
+            "Do you speak any languages"
+        ],
+        "responses": [
+            "I'm a computer program, I don't speak languages, but I can tell you about them!"
+        ]
+    },
+    {
+        "tag": "culture",
+        "patterns": [
+            "Tell me about culture",
+            "What's a cultural fact",
+            "Do you know any cultures"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know culture, but I can share some facts!"
+        ]
+    },
+    {
+        "tag": "health",
+        "patterns": [
+            "Tell me about health",
+            "What's a health tip",
+            "Do you know any health facts"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know health, but I can share some tips!"
+        ]
+    },
+    {
+        "tag": "fitness",
+        "patterns": [
+            "Tell me about fitness",
+            "What's a fitness tip",
+            "Do you know any fitness facts"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know fitness, but I can share some tips!"
+        ]
+    },
+    {
+        "tag": "fashion",
+        "patterns": [
+            "Tell me about fashion",
+            "What's a fashion tip",
+            "Do you know any fashion trends"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know fashion, but I can share some tips!"
+        ]
+    },
+    {
+        "tag": "finance",
+        "patterns": [
+            "Tell me about finance",
+            "What's a finance tip",
+            "Do you know any finance facts"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know finance, but I can share some tips!"
+        ]
+    },
+    {
+        "tag": "education",
+        "patterns": [
+            "Tell me about education",
+            "What's an education tip",
+            "Do you know any education facts"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know education, but I can share some tips!"
+        ]
+    },
+    {
+        "tag": "career",
+        "patterns": [
+            "Tell me about careers",
+            "What's a career tip",
+            "Do you know any career facts"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know careers, but I can share some tips!"
+        ]
+    },
+    {
+        "tag": "news",
+        "patterns": [
+            "What's the latest news",
+            "Tell me the news",
+            "What's happening around the world"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know the news"
+        ]
+    },
+    {
+        "tag": "jokes",
+        "patterns": [
+            "Tell me a joke",
+            "Say something funny",
+            "Do you know any jokes"
+        ],
+        "responses": [
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "What do you call a fish with no eyes? Fsh."
+        ]
+    },
+    {
+        "tag": "music",
+        "patterns": [
+            "Play some music",
+            "Can you play some music",
+            "I want to listen to music"
+        ],
+        "responses": [
+            "I'm a computer program, I can't play music"
+        ]
+    },
+    {
+        "tag": "movies",
+        "patterns": [
+            "What's your favorite movie",
+            "Tell me a movie",
+            "Do you like movies"
+        ],
+        "responses": [
+            "I'm a computer program, I don't watch movies"
+        ]
+    },
+    {
+        "tag": "food",
+        "patterns": [
+            "What's your favorite food",
+            "Do you like pizza",
+            "Tell me a recipe"
+        ],
+        "responses": [
+            "I'm a computer program, I don't eat food",
+            "I don't have a favorite food"
+        ]
+    },
+    {
+        "tag": "sports",
+        "patterns": [
+            "Do you like sports",
+            "What's your favorite sport",
+            "Tell me about sports"
+        ],
+        "responses": [
+            "I'm a computer program, I don't play sports",
+            "I don't have a favorite sport"
+        ]
+    },
+    {
+        "tag": "hobbies",
+        "patterns": [
+            "What are your hobbies",
+            "Do you have any hobbies",
+            "Tell me about your hobbies"
+        ],
+        "responses": [
+            "I'm a computer program, I don't have hobbies"
+        ]
+    },
+    {
+        "tag": "time",
+        "patterns": [
+            "What time is it",
+            "Can you tell me the time",
+            "What's the current time"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know the current time"
+        ]
+    },
+    {
+        "tag": "date",
+        "patterns": [
+            "What's the date today",
+            "Can you tell me the date",
+            "What's today's date"
+        ],
+        "responses": [
+            "I'm a computer program, I don't know the current date"
+        ]
+    }
+]
