@@ -31,7 +31,7 @@ for intent in intents:
         patterns.append(pattern)
 
 #training the model
-x= vectorizer.fit_transform(tags)
+x= vectorizer.fit_transform(patterns)
 y= tags
 clf.fit(x,y)
 
@@ -45,12 +45,13 @@ def chatbot(input_text):
         return "Cant answer the question"
 
 counter = 0
+
 def main():
     global counter
     st.title("Implementation of chatbot using NLP")
 
     # create a sidebar menu with options
-    menu = ["Home", "Chatbot"]
+    menu = ["Home", "Conversation History"]
     choice = st.sidebar.selectbox("Menu", menu)
 
     # Home page
@@ -70,6 +71,7 @@ def main():
         if user_input:
             #convert the user input to lowercase
             user_input_str = str(user_input)
+            
             response = chatbot(user_input)
             st.text_area("Chatbot:", value=response, height=120, max_chars=None, key=f"chatbot_response_{counter}")
 
