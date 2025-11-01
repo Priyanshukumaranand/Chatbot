@@ -5,14 +5,14 @@
             "Hi",
             "Hello",
             "Hey",
-            "How are you"
+            "How are you",
+            "Good morning",
+            "Good evening"
         ],
         "responses": [
-            "Hello there",
-            "Hello",
-            "Hey",
-            "I'm fine, thank you",
-            "Nothing much"
+            "Hey there! How can I help you today?",
+            "Hello! What can I do for you?",
+            "Hi! I'm here and ready to chat."
         ]
     },
     {
@@ -21,12 +21,14 @@
             "Bye",
             "Goodbye",
             "See you later",
-            "Take care"
+            "Take care",
+            "Catch you later",
+            "Talk soon"
         ],
         "responses": [
-            "Goodbye",
-            "See you later",
-            "Take care"
+            "Goodbye! Talk to you soon.",
+            "See you later! Stay safe.",
+            "Bye! Come back anytime."
         ]
     },
     {
@@ -35,12 +37,14 @@
             "Thanks",
             "Thank you",
             "That's helpful",
-            "Thank you very much"
+            "Thank you very much",
+            "Appreciate the help",
+            "Thanks for the help"
         ],
         "responses": [
-            "You're welcome",
-            "Anytime",
-            "My pleasure"
+            "You're welcome! Happy to help.",
+            "Anytime! Glad I could assist.",
+            "No problem at all."
         ]
     },
     {
@@ -49,12 +53,13 @@
             "Who are you",
             "What are you",
             "What's your name",
-            "What do you do"
+            "What do you do",
+            "Tell me about yourself"
         ],
         "responses": [
-            "I'm a chatbot",
-            "I'm a virtual assistant",
-            "I'm a bot"
+            "I'm a simple chatbot built with Python and Streamlit.",
+            "I'm a virtual assistant that replies using predefined intents.",
+            "I'm a bot created to practice natural language processing."
         ]
     },
     {
@@ -63,22 +68,27 @@
             "Can you help me",
             "What can you do for me",
             "I need your assistance",
-            "Can you assist me"
+            "Can you assist me",
+            "I need help",
+            "Please help"
         ],
         "responses": [
-            "I can help you with that",
-            "I can assist you",
-            "I can do that"
+            "I can guide you through the demo and answer simple questions.",
+            "I'm here to help with the intents I know about.",
+            "Let me know what you need and I'll do my best."
         ]
     },
     {
         "tag": "age",
         "patterns": [
             "How old are you",
-            "What's your age"
+            "What's your age",
+            "When were you created"
         ],
         "responses": [
-            "I'm a computer program, I don't have an age"
+            "I don't have an age—I'm a virtual assistant that lives in code.",
+            "Bots like me don't age, but I'm always learning.",
+            "I was created recently to help with this chatbot demo."
         ]
     },
     {
@@ -86,10 +96,14 @@
         "patterns": [
             "What's the weather like today",
             "How's the weather today",
-            "Is it going to rain today"
+            "Is it going to rain today",
+            "Weather update",
+            "Tell me the forecast"
         ],
         "responses": [
-            "I'm a computer program, I don't know the weather, but I hope it's sunny!"
+            "I don't have live weather data, but I hope it's pleasant where you are!",
+            "I can't check the weather right now—maybe try a weather app?",
+            "Weather isn't my strong suit, but I can still chat."
         ]
     },
     {
@@ -97,10 +111,14 @@
         "patterns": [
             "What's the latest news",
             "Tell me the news",
-            "What's happening around the world"
+            "What's happening around the world",
+            "Any headlines",
+            "Give me news"
         ],
         "responses": [
-            "I'm a computer program, I don't know the news, but I hope it's good!"
+            "I'm not connected to live news, but checking a trusted outlet is always a good idea.",
+            "I don't have breaking news to share—maybe visit your favorite news site.",
+            "I'm focused on chatting, not reporting news."
         ]
     },
     {
@@ -108,11 +126,14 @@
         "patterns": [
             "Tell me a joke",
             "Say something funny",
-            "Do you know any jokes"
+            "Do you know any jokes",
+            "Make me laugh",
+            "Joke please"
         ],
         "responses": [
             "Why don't scientists trust atoms? Because they make up everything!",
-            "What do you call a fish with no eyes? Fsh."
+            "What do you call a fish with no eyes? Fsh.",
+            "Why was the math book sad? It had too many problems."
         ]
     },
     {
@@ -120,10 +141,14 @@
         "patterns": [
             "Play some music",
             "Can you play some music",
-            "I want to listen to music"
+            "I want to listen to music",
+            "Suggest a song",
+            "Recommend music"
         ],
         "responses": [
-            "I'm a computer program, I can't play music, but I can suggest some great songs!"
+            "I can't play music, but I can suggest trying a relaxing playlist.",
+            "Music streaming services are great for that—give one a try!",
+            "How about listening to your favorite artist today?"
         ]
     },
     {
@@ -131,10 +156,14 @@
         "patterns": [
             "What's your favorite movie",
             "Tell me a movie",
-            "Do you like movies"
+            "Do you like movies",
+            "Suggest a movie",
+            "Any movie recommendations"
         ],
         "responses": [
-            "I'm a computer program, I don't watch movies, but I can recommend some!"
+            "I don't watch movies, but I hear classics are always a solid choice.",
+            "Maybe try a feel-good movie tonight!",
+            "How about revisiting a movie you already love?"
         ]
     },
     {
@@ -142,10 +171,14 @@
         "patterns": [
             "What's your favorite food",
             "Do you like pizza",
-            "Tell me a recipe"
+            "Tell me a recipe",
+            "Suggest something to eat",
+            "What should I cook"
         ],
         "responses": [
-            "I'm a computer program, I don't eat food, but I can share some recipes!"
+            "I don't eat, but trying a new recipe could be fun!",
+            "Maybe cook something comforting like pasta or soup.",
+            "I'm not a chef, yet I can cheer you on while you cook."
         ]
     },
     {
@@ -153,10 +186,14 @@
         "patterns": [
             "Do you like sports",
             "What's your favorite sport",
-            "Tell me about sports"
+            "Tell me about sports",
+            "Any sports news",
+            "Recommend a sport"
         ],
         "responses": [
-            "I'm a computer program, I don't play sports, but I can tell you about them!"
+            "I don't play sports, but cheering for your favorite team sounds fun!",
+            "Maybe try a quick workout or watch a highlight reel.",
+            "Sports keep people active and connected—what's your favorite?"
         ]
     },
     {
@@ -164,10 +201,14 @@
         "patterns": [
             "What are your hobbies",
             "Do you have any hobbies",
-            "Tell me about your hobbies"
+            "Tell me about your hobbies",
+            "Suggest a hobby",
+            "I need a hobby"
         ],
         "responses": [
-            "I'm a computer program, I don't have hobbies, but I can suggest some!"
+            "I like chatting with people like you—maybe you'd enjoy reading or drawing?",
+            "Trying something creative like writing or music could be fun.",
+            "How about exploring a new hobby like gardening or coding?"
         ]
     },
     {
@@ -175,10 +216,14 @@
         "patterns": [
             "What time is it",
             "Can you tell me the time",
-            "What's the current time"
+            "What's the current time",
+            "Time please",
+            "Do you know the time"
         ],
         "responses": [
-            "I'm a computer program, I don't know the current time, but I can help you find out!"
+            "I can't read clocks, but your device should have the current time.",
+            "Timekeeping isn't my specialty—maybe check nearby?",
+            "I'm not synced to a clock, yet I'm always ready to chat."
         ]
     },
     {
@@ -186,10 +231,14 @@
         "patterns": [
             "What's the date today",
             "Can you tell me the date",
-            "What's today's date"
+            "What's today's date",
+            "Date please",
+            "Do you know the date"
         ],
         "responses": [
-            "I'm a computer program, I don't know the current date, but I can help you find out!"
+            "I don't track the calendar, but your device can show today's date.",
+            "Checking a calendar or phone might be the quickest way.",
+            "I'm better at chatting than scheduling—sorry!"
         ]
     },
     {
@@ -197,10 +246,14 @@
         "patterns": [
             "Where should I travel",
             "Suggest a travel destination",
-            "Where to go on vacation"
+            "Where to go on vacation",
+            "Any travel ideas",
+            "Plan a trip"
         ],
         "responses": [
-            "I'm a computer program, I don't travel, but I can suggest some great destinations!"
+            "How about exploring a nearby city or a favorite landmark?",
+            "Beach, mountains, or city—what sounds best to you?",
+            "Travel blogs can offer great inspiration for your next trip."
         ]
     },
     {
@@ -208,10 +261,14 @@
         "patterns": [
             "Recommend a book",
             "What's a good book to read",
-            "Do you like reading"
+            "Do you like reading",
+            "Suggest a novel",
+            "Book ideas"
         ],
         "responses": [
-            "I'm a computer program, I don't read books, but I can recommend some!"
+            "How about trying a popular mystery or sci-fi novel?",
+            "Libraries and book clubs are great for discovering new reads.",
+            "Consider rereading a favorite book—it can feel brand new."
         ]
     },
     {
@@ -219,10 +276,14 @@
         "patterns": [
             "Tell me about technology",
             "What's new in tech",
-            "Do you like technology"
+            "Do you like technology",
+            "Any tech trends",
+            "Tech update"
         ],
         "responses": [
-            "I'm a computer program, I don't use technology, but I can tell you about it!"
+            "Technology moves fast—AI and automation are big topics right now.",
+            "Keeping an eye on tech news sites can be really insightful.",
+            "I love talking about tech! Anything specific you're curious about?"
         ]
     },
     {
@@ -230,10 +291,14 @@
         "patterns": [
             "Tell me about history",
             "What's a historical fact",
-            "Do you know any history"
+            "Do you know any history",
+            "History lesson",
+            "Historical info"
         ],
         "responses": [
-            "I'm a computer program, I don't know history, but I can share some facts!"
+            "History is full of stories—maybe explore a time period you like.",
+            "Museums and documentaries are great ways to learn history.",
+            "I don't keep a full history book, but I'm happy to chat about it."
         ]
     },
     {
@@ -241,10 +306,14 @@
         "patterns": [
             "Tell me about science",
             "What's a scientific fact",
-            "Do you know any science"
+            "Do you know any science",
+            "Science info",
+            "Science help"
         ],
         "responses": [
-            "I'm a computer program, I don't know science, but I can share some facts!"
+            "Science is fascinating—maybe read about space or biology.",
+            "Experiments and documentaries are great for learning science.",
+            "I'm not a scientist, but I'm excited about discovery!"
         ]
     },
     {
@@ -252,10 +321,14 @@
         "patterns": [
             "Tell me about math",
             "What's a math fact",
-            "Do you know any math"
+            "Do you know any math",
+            "Math help",
+            "Explain math"
         ],
         "responses": [
-            "I'm a computer program, I don't know math, but I can share some facts!"
+            "Math builds the world around us—practice makes it easier.",
+            "Maybe try a puzzle or problem to sharpen your skills.",
+            "I can encourage you, though I'm not solving equations today."
         ]
     },
     {
@@ -263,10 +336,14 @@
         "patterns": [
             "Tell me about art",
             "What's a famous painting",
-            "Do you like art"
+            "Do you like art",
+            "Art ideas",
+            "Recommend art"
         ],
         "responses": [
-            "I'm a computer program, I don't know art, but I can tell you about it!"
+            "Art lets people express themselves—maybe visit a gallery online.",
+            "Try sketching or painting—it's very relaxing.",
+            "Famous works like the Mona Lisa are always inspiring."
         ]
     },
     {
@@ -274,10 +351,14 @@
         "patterns": [
             "Tell me about languages",
             "What's a popular language",
-            "Do you speak any languages"
+            "Do you speak any languages",
+            "Language tips",
+            "Learn a language"
         ],
         "responses": [
-            "I'm a computer program, I don't speak languages, but I can tell you about them!"
+            "Learning a new language can open doors—apps make it easier.",
+            "Popular languages include English, Spanish, and Mandarin.",
+            "I don't speak languages, but I can cheer you on while learning."
         ]
     },
     {
@@ -285,10 +366,14 @@
         "patterns": [
             "Tell me about culture",
             "What's a cultural fact",
-            "Do you know any cultures"
+            "Do you know any cultures",
+            "Culture info",
+            "Cultural tips"
         ],
         "responses": [
-            "I'm a computer program, I don't know culture, but I can share some facts!"
+            "Every culture has unique traditions worth exploring.",
+            "Maybe try food or music from another culture today.",
+            "Understanding culture helps us appreciate diversity."
         ]
     },
     {
@@ -296,10 +381,14 @@
         "patterns": [
             "Tell me about health",
             "What's a health tip",
-            "Do you know any health facts"
+            "Do you know any health facts",
+            "Health advice",
+            "Stay healthy"
         ],
         "responses": [
-            "I'm a computer program, I don't know health, but I can share some tips!"
+            "Staying hydrated and getting rest are simple health wins.",
+            "For medical advice, it's best to check with a professional.",
+            "I'm not a doctor, but I can encourage healthy habits."
         ]
     },
     {
@@ -307,10 +396,14 @@
         "patterns": [
             "Tell me about fitness",
             "What's a fitness tip",
-            "Do you know any fitness facts"
+            "Do you know any fitness facts",
+            "Workout ideas",
+            "Exercise help"
         ],
         "responses": [
-            "I'm a computer program, I don't know fitness, but I can share some tips!"
+            "A quick walk or stretch can boost your energy.",
+            "Consistency is key with fitness—start small and build up.",
+            "Remember to listen to your body and rest when needed."
         ]
     },
     {
@@ -318,10 +411,14 @@
         "patterns": [
             "Tell me about fashion",
             "What's a fashion tip",
-            "Do you know any fashion trends"
+            "Do you know any fashion trends",
+            "Style advice",
+            "What should I wear"
         ],
         "responses": [
-            "I'm a computer program, I don't know fashion, but I can share some tips!"
+            "Wear what makes you comfortable and confident.",
+            "Fashion trends change quickly—make your own style!",
+            "Accessorizing can freshen up any outfit."
         ]
     },
     {
@@ -329,10 +426,14 @@
         "patterns": [
             "Tell me about finance",
             "What's a finance tip",
-            "Do you know any finance facts"
+            "Do you know any finance facts",
+            "Money advice",
+            "Budget help"
         ],
         "responses": [
-            "I'm a computer program, I don't know finance, but I can share some tips!"
+            "Tracking expenses is a simple way to stay on budget.",
+            "Saving a little regularly can add up over time.",
+            "I'm not a financial advisor, but planning ahead is helpful."
         ]
     },
     {
@@ -340,10 +441,14 @@
         "patterns": [
             "Tell me about education",
             "What's an education tip",
-            "Do you know any education facts"
+            "Do you know any education facts",
+            "Study tips",
+            "Learning advice"
         ],
         "responses": [
-            "I'm a computer program, I don't know education, but I can share some tips!"
+            "Setting small goals can make studying easier.",
+            "Taking breaks helps you absorb information better.",
+            "Education is lifelong—keep exploring new topics!"
         ]
     },
     {
@@ -351,112 +456,14 @@
         "patterns": [
             "Tell me about careers",
             "What's a career tip",
-            "Do you know any career facts"
+            "Do you know any career facts",
+            "Job advice",
+            "Career help"
         ],
         "responses": [
-            "I'm a computer program, I don't know careers, but I can share some tips!"
-        ]
-    },
-    {
-        "tag": "news",
-        "patterns": [
-            "What's the latest news",
-            "Tell me the news",
-            "What's happening around the world"
-        ],
-        "responses": [
-            "I'm a computer program, I don't know the news"
-        ]
-    },
-    {
-        "tag": "jokes",
-        "patterns": [
-            "Tell me a joke",
-            "Say something funny",
-            "Do you know any jokes"
-        ],
-        "responses": [
-            "Why don't scientists trust atoms? Because they make up everything!",
-            "What do you call a fish with no eyes? Fsh."
-        ]
-    },
-    {
-        "tag": "music",
-        "patterns": [
-            "Play some music",
-            "Can you play some music",
-            "I want to listen to music"
-        ],
-        "responses": [
-            "I'm a computer program, I can't play music"
-        ]
-    },
-    {
-        "tag": "movies",
-        "patterns": [
-            "What's your favorite movie",
-            "Tell me a movie",
-            "Do you like movies"
-        ],
-        "responses": [
-            "I'm a computer program, I don't watch movies"
-        ]
-    },
-    {
-        "tag": "food",
-        "patterns": [
-            "What's your favorite food",
-            "Do you like pizza",
-            "Tell me a recipe"
-        ],
-        "responses": [
-            "I'm a computer program, I don't eat food",
-            "I don't have a favorite food"
-        ]
-    },
-    {
-        "tag": "sports",
-        "patterns": [
-            "Do you like sports",
-            "What's your favorite sport",
-            "Tell me about sports"
-        ],
-        "responses": [
-            "I'm a computer program, I don't play sports",
-            "I don't have a favorite sport"
-        ]
-    },
-    {
-        "tag": "hobbies",
-        "patterns": [
-            "What are your hobbies",
-            "Do you have any hobbies",
-            "Tell me about your hobbies"
-        ],
-        "responses": [
-            "I'm a computer program, I don't have hobbies"
-        ]
-    },
-    {
-        "tag": "time",
-        "patterns": [
-            "What time is it",
-            "Can you tell me the time",
-            "What's the current time"
-        ],
-        "responses": [
-            "I'm a computer program, I don't know the current time"
-        ]
-    },
-    {
-        "tag": "date",
-        "patterns": [
-            "What's the date today",
-            "Can you tell me the date",
-            "What's today's date"
-        ],
-        "responses": [
-            "I'm a computer program, I don't know the current date"
+            "Networking and learning new skills can boost your career.",
+            "Reflect on what you enjoy—your career should align with it.",
+            "I'm here to encourage you as you plan your career steps."
         ]
     }
 ]
