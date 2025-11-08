@@ -23,84 +23,129 @@ vectorizer = TfidfVectorizer()
 clf = LogisticRegression(random_state =0 , max_iter=10000)
 
 #preprocess the data
-tags=[]
-patterns=[]
-for intent in intents:
-    for pattern in intent["patterns"]:
-        tags.append(intent["tag"])
-        patterns.append(pattern)
+import os
+import csv
+import datetime
+from typing import Optional
 
-#training the model
-x= vectorizer.fit_transform(patterns)
-y= tags
-clf.fit(x,y)
+import requests
+import streamlit as st
 
-def chatbot(input_text):
-    vectorized_text = vectorizer.transform([input_text])
-    tag = clf.predict(vectorized_text)[0]
-    for intent in intents:
-        if intent["tag"] == tag:
-            return random.choice(intent["responses"])
-    return "Can't answer the question yet"
+API_URL = os.environ.get("CHATBOT_API_URL", "http://localhost:8000/chat")
+LOG_HEADER = ["User Input", "Chatbot Response", "Tag", "Probability", "Timestamp"]
 
-counter = 0
+
+def ensure_log_file(path: str) -> None:
+    if os.path.exists(path):
+        with open(path, "r", newline="", encoding="utf-8") as csvfile:
+            reader = csv.reader(csvfile)
+            existing_header = next(reader, [])
+            rows = list(reader)
+
+        if existing_header == LOG_HEADER:
+            return
+
+        padded_rows = []
+        for row in rows:
+            padded = row + [""] * max(0, len(LOG_HEADER) - len(row))
+            padded_rows.append(padded[: len(LOG_HEADER)])
+
+        with open(path, "w", newline="", encoding="utf-8") as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(LOG_HEADER)
+            writer.writerows(padded_rows)
+        return
+
+    with open(path, "w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(LOG_HEADER)
+
+
+def call_backend(message: str) -> Optional[dict]:
+    try:
+        response = requests.post(API_URL, json={"message": message}, timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as exc:
+        st.error(f"Backend request failed: {exc}")
+        return None
+
+
+def log_interaction(path: str, user_message: str, bot_response: str, tag: Optional[str], probability: Optional[float]) -> None:
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(path, "a", newline="", encoding="utf-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow([user_message, bot_response, tag or "", f"{probability:.4f}" if probability is not None else "", timestamp])
+
+
+def render_home(log_path: str) -> None:
+    st.subheader("Chat")
+    st.write("Send a message to the chatbot. The backend FastAPI service handles the intent classification.")
+
+    user_input = st.text_input("You:", key="chat_input")
+
+    if st.button("Send") and user_input:
+        user_input_str = user_input.strip()
+        result = call_backend(user_input_str)
+        if result is None:
+            return
+
+        response_text = result.get("response", "I couldn't understand that.")
+        tag = result.get("tag")
+        probability = result.get("probability")
+
+        tag_display = tag or "unknown"
+        if isinstance(probability, (int, float)):
+            confidence_display = f"{probability:.2%}"
+        else:
+            probability = None
+            confidence_display = "n/a"
+
+        st.text_area(
+            "Chatbot:",
+            value=f"{response_text}\n\n(Intent: {tag_display}, Confidence: {confidence_display})",
+            height=150,
+        )
+
+        log_interaction(log_path, user_input_str, response_text, tag, probability)
+
+
+def render_history(log_path: str) -> None:
+    st.subheader("Conversation History")
+    if not os.path.exists(log_path):
+        st.info("No conversations logged yet.")
+        return
+
+    with open(log_path, "r", newline="", encoding="utf-8") as csvfile:
+        reader = csv.reader(csvfile)
+        next(reader, None)  # skip header
+        for row in reader:
+            if not row:
+                continue
+            user_msg, bot_resp, tag, probability, timestamp = row
+            probability_display = probability or "n/a"
+            tag_display = tag or "unknown"
+            st.text(f"User: {user_msg}")
+            st.text(f"Chatbot: {bot_resp}")
+            st.text(f"Tag: {tag_display} | Confidence: {probability_display}")
+            st.text(f"Timestamp: {timestamp}")
+            st.markdown("---")
+
 
 def main():
-    global counter
-    st.title("Implementation of chatbot using NLP")
+    st.title("Chatbot (Streamlit Frontend)")
 
-    # create a sidebar menu with options
+    log_path = os.environ.get("CHATBOT_LOG_PATH", "chat_log.csv")
+    ensure_log_file(log_path)
+
     menu = ["Home", "Conversation History"]
     choice = st.sidebar.selectbox("Menu", menu)
 
-    # Home page
     if choice == "Home":
-        st.subheader("Home")
-        st.write("Welcome to the home page of the chatbot. You can navigate to the chatbot page to interact with the chatbot.")
-
-        # check if the chat_log.csv file exists , and if it does, display the number of interactions
-        if not os.path.exists("chat_log.csv"):
-            with open('chat_log.csv', 'w',newline='',encoding='utf-8') as csvfile:
-                csvwriter = csv.writer(csvfile)
-                csvwriter.writerow(["User Input","Chatbot Response","Timestamp"])
-        
-        counter+=1
-        user_input = st.text_input("You:", key=f"user_input_{counter}")
-
-        if user_input:
-            #convert the user input to lowercase
-            user_input_str = str(user_input)
-            
-            response = chatbot(user_input)
-            st.text_area("Chatbot:", value=response, height=120, max_chars=None, key=f"chatbot_response_{counter}")
-
-            #get the current timestamp
-            timestamp = datetime.datetime.now().strftime(f"%Y-%m-%d %H:%M:%S")
-
-            #save the user input and chatbot response to the chat_log.csv file
-            with open('chat_log.csv', 'a',newline='',encoding='utf-8') as csvfile:
-                csvwriter = csv.writer(csvfile)
-                csvwriter.writerow([user_input_str,response,timestamp])
-
-            if response.lower() in ['goodbye','bye']:
-                st.write("Chatbot: Goodbye! Have a great day!")
-                st.stop()
-    
-    #conversation histry menu
-
+        render_home(log_path)
     elif choice == "Conversation History":
-        st.subheader("Conversation History")
-        with open("chat_log.csv", "r",newline='',encoding='utf-8') as file:
-            csvreader = csv.reader(file)
-            next(csvreader)
-            for row in csvreader:
-                st.text(f"User: {row[0]}")
-                st.text(f"Chatbot: {row[1]}")
-                st.text(f"Timestamp: {row[2]}")
-                st.markdown("---")
+        render_history(log_path)
 
-    elif choice == "About":
-        st.write("")
 
 if __name__ == "__main__":
     main()

@@ -1,3 +1,6 @@
 streamlit
 scikit-learn
 nltk
+fastapi
+uvicorn[standard]
+requests

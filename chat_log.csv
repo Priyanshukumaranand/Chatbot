@@ -1,42 +1,51 @@
-hi,,2024-12-10 17:03:32
-What are your hobbies,,2024-12-10 17:12:57
-What are your hobbies,,2024-12-10 17:16:30
-hi,,2024-12-10 17:21:47
-hi,,2024-12-10 17:22:08
-What are your hobbies,Cant answer the question,2024-12-10 17:23:48
-pk,Cant answer the question,2024-12-10 17:24:08
-What are your hobbies,Cant answer the question,2024-12-10 17:25:40
-hi,Cant answer the question,2024-12-10 17:25:47
-What are your hobbies,Cant answer the question,2024-12-10 17:30:44
-What are your hobbies,Cant answer the question,2024-12-10 18:01:41
-What are your hobbies?,Cant answer the question,2024-12-10 18:01:44
-What are your hobbies?,Cant answer the question,2024-12-10 18:01:53
-hobbies,Cant answer the question,2024-12-10 18:02:12
-hobbies,Cant answer the question,2024-12-10 18:02:16
-What are your hobbies,Cant answer the question,2024-12-10 18:05:24
-Tell me a joke,Cant answer the question,2024-12-10 18:05:37
-Tell me a joke,Cant answer the question,2024-12-10 18:05:49
-hi,Hello there,2024-12-10 18:06:07
-Bye,Cant answer the question,2024-12-10 18:06:27
-Hello,Hello,2024-12-10 18:06:42
-Hello,"I'm fine, thank you",2024-12-10 18:06:46
-Hello,Nothing much,2024-12-10 18:06:48
-Hello,Hey,2024-12-10 18:06:50
-Goodbye,Cant answer the question,2024-12-10 18:07:07
-goodbye,Cant answer the question,2024-12-10 18:07:20
-goodbye,Cant answer the question,2024-12-10 18:07:25
-Hi,Hello there,2024-12-10 18:07:53
-goodbye,Cant answer the question,2024-12-10 18:09:35
-hi,Nothing much,2025-11-01 06:06:11
-What are your hobbies,Cant answer the question,2025-11-01 06:06:21
-goodbye,Cant answer the question,2025-11-01 06:06:59
-What are your hobbies,"I'm a computer program, I don't have hobbies, but I can suggest some!",2025-11-01 06:20:07
-hi,"I'm fine, thank you",2025-11-01 06:20:13
-rehgtr,What do you call a fish with no eyes? Fsh.,2025-11-01 06:20:29
-hi,Hey,2025-11-01 06:20:37
-what can u do?,I can help you with that,2025-11-01 06:20:46
-what can u do?,I can assist you,2025-11-01 06:20:54
-What's the date today,"I'm a computer program, I don't know the current date, but I can help you find out!",2025-11-01 06:25:46
-What's the date today,"I'm a computer program, I don't know the current date, but I can help you find out!",2025-11-01 06:25:55
-Tell me about fitness,Remember to listen to your body and rest when needed.,2025-11-01 06:37:21
-Tell  about fitness,Remember to listen to your body and rest when needed.,2025-11-01 06:37:35
+User Input,Chatbot Response,Tag,Probability,Timestamp
+What are your hobbies,,2024-12-10 17:12:57,,
+What are your hobbies,,2024-12-10 17:16:30,,
+hi,,2024-12-10 17:21:47,,
+hi,,2024-12-10 17:22:08,,
+What are your hobbies,Cant answer the question,2024-12-10 17:23:48,,
+pk,Cant answer the question,2024-12-10 17:24:08,,
+What are your hobbies,Cant answer the question,2024-12-10 17:25:40,,
+hi,Cant answer the question,2024-12-10 17:25:47,,
+What are your hobbies,Cant answer the question,2024-12-10 17:30:44,,
+What are your hobbies,Cant answer the question,2024-12-10 18:01:41,,
+What are your hobbies?,Cant answer the question,2024-12-10 18:01:44,,
+What are your hobbies?,Cant answer the question,2024-12-10 18:01:53,,
+hobbies,Cant answer the question,2024-12-10 18:02:12,,
+hobbies,Cant answer the question,2024-12-10 18:02:16,,
+What are your hobbies,Cant answer the question,2024-12-10 18:05:24,,
+Tell me a joke,Cant answer the question,2024-12-10 18:05:37,,
+Tell me a joke,Cant answer the question,2024-12-10 18:05:49,,
+hi,Hello there,2024-12-10 18:06:07,,
+Bye,Cant answer the question,2024-12-10 18:06:27,,
+Hello,Hello,2024-12-10 18:06:42,,
+Hello,"I'm fine, thank you",2024-12-10 18:06:46,,
+Hello,Nothing much,2024-12-10 18:06:48,,
+Hello,Hey,2024-12-10 18:06:50,,
+Goodbye,Cant answer the question,2024-12-10 18:07:07,,
+goodbye,Cant answer the question,2024-12-10 18:07:20,,
+goodbye,Cant answer the question,2024-12-10 18:07:25,,
+Hi,Hello there,2024-12-10 18:07:53,,
+goodbye,Cant answer the question,2024-12-10 18:09:35,,
+hi,Nothing much,2025-11-01 06:06:11,,
+What are your hobbies,Cant answer the question,2025-11-01 06:06:21,,
+goodbye,Cant answer the question,2025-11-01 06:06:59,,
+What are your hobbies,"I'm a computer program, I don't have hobbies, but I can suggest some!",2025-11-01 06:20:07,,
+hi,"I'm fine, thank you",2025-11-01 06:20:13,,
+rehgtr,What do you call a fish with no eyes? Fsh.,2025-11-01 06:20:29,,
+hi,Hey,2025-11-01 06:20:37,,
+what can u do?,I can help you with that,2025-11-01 06:20:46,,
+what can u do?,I can assist you,2025-11-01 06:20:54,,
+What's the date today,"I'm a computer program, I don't know the current date, but I can help you find out!",2025-11-01 06:25:46,,
+What's the date today,"I'm a computer program, I don't know the current date, but I can help you find out!",2025-11-01 06:25:55,,
+Tell me about fitness,Remember to listen to your body and rest when needed.,2025-11-01 06:37:21,,
+Tell  about fitness,Remember to listen to your body and rest when needed.,2025-11-01 06:37:35,,
+hi,Hello! What can I do for you?,greeting,0.1054,2025-11-08 06:24:30
+hola,Bye! Come back anytime.,goodbye,0.0449,2025-11-08 06:24:38
+how are u?,Hey there! How can I help you today?,greeting,0.0893,2025-11-08 06:24:46
+bye,Goodbye! Talk to you soon.,goodbye,0.1059,2025-11-08 06:24:57
+ur age?,Goodbye! Talk to you soon.,goodbye,0.0438,2025-11-08 06:26:53
+How old are you,Hey there! How can I help you today?,greeting,0.0710,2025-11-08 06:27:01
+What's the weather like today,"Weather isn't my strong suit, but I can still chat.",weather,0.1718,2025-11-08 06:27:24
+hi,Hi! I'm here and ready to chat.,greeting,0.1054,2025-11-08 06:36:52
+weather?,I can't check the weather right now—maybe try a weather app?,weather,0.1330,2025-11-08 06:36:58
